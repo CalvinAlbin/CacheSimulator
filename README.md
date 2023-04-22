@@ -10,6 +10,7 @@ Create a folder that contains cache_sim.cpp and input.txt. Input.txt should cont
         ./cacheSim <numEntries> <associativity> input.txt
         
 -numEntries: an int that is a power of two which designates the size of the cache
+
 -associativity: an int that is a power of two less than or equal to numEntries that specifies how many blocks will be used in the cache.
 
 How it works:
