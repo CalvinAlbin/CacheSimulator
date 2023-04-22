@@ -46,14 +46,14 @@ int main(int argc, char* argv[]){
         while (!found && counter < blockSpace * (section + 1)){
             if (cache[counter] == entry){
                 found = true;
-                fout << entry << " : HIT" << endl;
+                fout << entry << ": HIT" << endl;
             }
             counter++;
         }
         if (found == false){
             cache[blockIndex[section] + sectionStartIndex] = entry;
             blockIndex[section] = (blockIndex[section] + 1) % blockSpace;
-            fout << entry << " : MISS" << endl;
+            fout << entry << ": MISS" << endl;
         }
     }
 
