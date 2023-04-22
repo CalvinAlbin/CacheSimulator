@@ -9,6 +9,8 @@ int main(int argc, char* argv[]){
 //Declaring initial variables
     int numEntries = atoi(argv[1]);
     int associativity = atoi(argv[2]);
+    if (associativity == 1)
+        associativity = numEntries;
     int blockSpace = numEntries / associativity;
 
 
