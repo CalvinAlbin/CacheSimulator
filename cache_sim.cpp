@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include <cstdlib>
 
 using namespace std;
 
@@ -18,7 +19,7 @@ int main(int argc, char* argv[]){
 
 //Opening Output File
     ofstream fout;
-    fout.open("cache_sim_output.txt");
+    fout.open("cache_sim_output");
 
 
 //Initializing Cache Vector and blockIndex vector
