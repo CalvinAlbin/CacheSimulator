@@ -11,6 +11,8 @@ int main(int argc, char* argv[]){
     int associativity = atoi(argv[2]);
     if (associativity == 1)
         associativity = numEntries;
+    else if (associativity == numEntries)
+        associativity = 1;
     int blockSpace = numEntries / associativity;
 
 
